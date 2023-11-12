@@ -1,5 +1,5 @@
 import './App.css';
-import Question from './components/question';
+import Accordian from './components/accordian';
 
 const questions = [
   {
@@ -26,7 +26,7 @@ function App() {
       {questions.map((q) => {
         return (
           <div>
-            <Question id={q.id} title={q.title} info={q.info} />
+            <Accordian id={q.id} title={q.title} info={q.info} />
           </div>
         );
       })}
